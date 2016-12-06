@@ -113,7 +113,61 @@ ul li{
 	line-height:48px;
 }
 
+.smallMenu{
+	position:absolute;
+	left:45%;
+	top:38px;
+	display:none;
+}
+
+.smallMenu:hover{
+	cursor:pointer;
+}
+
+.partSmallMenu{
+	border:1px solid black;
+	border-radius:10px;
+	background:grey;
+	width:80px;
+	height:5px;
+	margin:10px;
+}
+
+.openSmallMenu{
+	text-align:center;
+	margin:25px 0 0 -20px;
+	display:none;
+}
+
+.openSmallMenu li{
+	display:block;
+	clear:both;
+	margin:0 0 20px 0;
+}
+
+.openSmallMenu li a{
+	color:white;
+	text-decoration:none;
+}
+
+.openSmallMenu li.active a{
+	color:orange;
+	text-decoration:underline;
+}
+
+.openSmallMenu li a:hover{
+	color:orange;
+	text-decoration:underline;
+}
+
 /*Адаптивный стиль под планшеты*/
 @media all and (max-width:768px){
+	/* Шапка */
+	.main-menu{
+		display:none;
+	}
 	
+	.smallMenu{
+		display:block;
+	}
 }

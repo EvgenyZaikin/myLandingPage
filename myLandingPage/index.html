@@ -29,10 +29,40 @@
 						<div class="col-md-2">
 							<div class="phone">+7 (495) 00-99-56</div>
 						</div>
+						<div class="smallMenu">
+							<div class="partSmallMenu"></div>
+							<div class="partSmallMenu"></div>
+							<div class="partSmallMenu"></div>
+							<ul class="openSmallMenu">
+								<li class="active"><a href="">Главная</a></li>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Оценка</a></li>
+								<li><a href="">Сделки M&amp;A</a></li>
+								<li><a href="">Бухгалтерские услуги</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 	</body>
 	
+	<script>
+			/* Делаем открытие/закрытие меню при отображении на планшетах */
+			var smallMenu = document.getElementsByClassName('smallMenu');
+			var openSmallMenu = document.getElementsByClassName('openSmallMenu');
+			/*alert(smallMenu.length);*/
+			smallMenu[0].addEventListener("click", function(){
+				var styleOpenSmallMenu = getComputedStyle(openSmallMenu[0]);
+				var display = styleOpenSmallMenu.display;
+				if (display == "none"){
+					openSmallMenu[0].style.display = "block";
+				} else if (display == "block"){
+					openSmallMenu[0].style.display = "none";
+				} else {
+					alert("Какая-то ошибка с выпадающим меню!");
+				}
+			});
+	</script>
 </html>

@@ -35,3 +35,85 @@ h3{
 	font:24px sans-serif;
 }
 
+
+
+ul li{
+	list-style-type:none;
+	display:inline-block;
+}
+
+/* Шапка */
+
+.main-head{
+	min-height:620px;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+}
+
+.main-head:before{
+	background-color:#394b5f;
+	opacity:.85;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	content:'';
+}
+
+.top-line{
+	min-height:160px;
+	background-image:url(img/top_gradient.png);
+}
+
+.logo img{
+	width:100px;
+	position:absolute;
+	top:45px;
+	left:10%;
+	opacity: .95;
+}
+
+.main-menu{
+	font-size:14px;
+	position:absolute;
+	top:45px;
+	left:30%;
+}
+
+.main-menu ul li{
+	line-height:48px;
+	padding:0 10px;
+}
+
+.main-menu ul li a{
+	text-decoration:none;
+	color:white;
+}
+
+.main-menu ul li.active a{
+	color:orange;
+	text-decoration:underline;
+}
+
+.main-menu ul li a:hover{
+	color:orange;
+	text-decoration:underline;
+}
+
+.phone{
+	color:white;
+	opacity: .9;
+	font-size:20px;
+	font-weight:bold;
+	position:absolute;
+	top:45px;
+	left:80%;
+	line-height:48px;
+}
+
+/*Адаптивный стиль под планшеты*/
+@media all and (max-width:768px){
+	
+}

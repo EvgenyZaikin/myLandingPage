@@ -45,6 +45,45 @@
 					</div>
 				</div>
 			</div>
+			
+			<div class="header-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="header-left">
+								<h1>Armata Financical Group</h1>
+								<ul>
+									<img src="img/tc_triangle_first.svg" width="20px"/>
+									<li><a href="">Независимая оценка имущества</a></li>
+									<img src="img/tc_triangle_first.svg" width="20px"/>
+									<li><a href="">Сделки слияния и поглощения</a></li>
+									<img src="img/tc_triangle_first.svg" width="20px"/>
+									<li><a href="">Бухгалтерские услуги</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<form class="request" method="POST" action="">
+								<h4>Заявка:</h4>
+								<p>
+									Оставьте заявку и мы свяжемся с Вами </br> 
+									в течение 15 минут в рабочее время </br> 
+									с 10:00 до 18:00 с понедельника по пятницу
+								</p>
+								<label>
+									<span>Ваше имя:</span>
+									<input type="text" name="name" required/>
+								</label>
+								<label>
+									<span>Ваше телефон:</span>
+									<input type="text" name="phone" required/>
+								</label>
+								<input type="submit" name="send" value="Отправить" class="sendButton"/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 	</body>
 	
@@ -52,7 +91,6 @@
 			/* Делаем открытие/закрытие меню при отображении на планшетах */
 			var smallMenu = document.getElementsByClassName('smallMenu');
 			var openSmallMenu = document.getElementsByClassName('openSmallMenu');
-			/*alert(smallMenu.length);*/
 			smallMenu[0].addEventListener("click", function(){
 				var styleOpenSmallMenu = getComputedStyle(openSmallMenu[0]);
 				var display = styleOpenSmallMenu.display;

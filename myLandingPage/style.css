@@ -1,4 +1,4 @@
-/* Базовые настройки CSS */
+/* Ѓазовые настройки CSS */
 
 *{
 	margin: 0;
@@ -42,13 +42,22 @@ ul li{
 	display:inline-block;
 }
 
-/* Шапка */
+form{
+	opacity:.8;
+	background-color:#243343;
+	padding:30px 35px;
+	color:#97a4b2;
+	font-size:13px;
+}
+
+/* апка */
 
 .main-head{
 	min-height:620px;
 	background-size:cover;
 	background-position:center;
 	position:relative;
+	padding:0 0 160px 0;
 }
 
 .main-head:before{
@@ -142,7 +151,7 @@ ul li{
 .openSmallMenu li{
 	display:block;
 	clear:both;
-	margin:0 0 20px 0;
+	margin:50 0 20px 0;
 }
 
 .openSmallMenu li a{
@@ -160,14 +169,135 @@ ul li{
 	text-decoration:underline;
 }
 
-/*Адаптивный стиль под планшеты*/
-@media all and (max-width:768px){
-	/* Шапка */
+.header-wrap{
+	margin:40px 0 0 0;
+}
+
+.header-wrap h1{
+	margin:120px 0 0 50px;
+	color:white;
+	display:inline-block;
+	border-bottom:orange 8px solid;
+	padding:0 0 18px 0;
+	position:absolute;
+}
+
+.header-wrap ul{
+	position:absolute;
+	top:420px;
+	left:80px;
+	width:270px;
+}
+
+.header-wrap ul li a{
+	display:block;
+	color:white;
+	text-decoration:none;
+	font-size:18px;
+	line-height:32px;
+}
+
+.header-wrap ul li a:hover{
+	text-decoration:underline;
+}
+
+.request{
+	float:right;
+	margin:0 40px 0 0;
+	border-bottom:3px solid #1A222B;
+}
+
+.request h4{
+	color:white;
+	font-weight:bold;
+	text-transform:none;
+	font-size:32px;
+}
+
+.request p{
+	color:lightgrey;
+	margin:15px 0 0 0;
+	line-height:18px;
+}
+
+.request span{
+	color:#778390;;
+	letter-spacing:1.5px;
+	display:block;
+	margin:0 0 8px 0;
+}
+
+.request label{
+	display:block;
+	margin:22px 0 10px 0;
+	font-size:13px;
+}
+
+.request input{
+	display:block;
+	width:100%;
+	border:none;
+	box-shadow:0 -3px #1F2A36;
+	background-color:#34465A;
+	text-indent:10px;
+	padding:10px 0 10px 0;
+	color:lightgrey;
+	transition:all .5s ease;
+}
+
+.request input:focus{
+	box-shadow:0 -6px #1F2A36;
+	background-color:#394E65;
+}
+
+input[type="submit"].sendButton{
+	display:inline-block;
+	border:none;
+	text-align:center;
+	box-shadow:none;
+	background-color:orange;
+	width:auto;
+	margin:15px 0 0 50px;
+	color:#111;
+	font-size:22px;
+	font-weight:bold;
+	padding:12px 30px 12px 30px;
+	border-bottom:3px solid #897200;
+}
+
+input[type="submit"].sendButton:hover{
+	background-color:#FFB338;
+	cursor:pointer;
+}
+
+input[type="submit"].sendButton:active{
+	background-color:red;
+}
+
+/*Ђдаптивный стиль под планшеты*/
+@media all and (max-width:1024px){
+	/* апка */
 	.main-menu{
 		display:none;
 	}
 	
 	.smallMenu{
 		display:block;
+	}
+	
+	.header-left h1{
+		font-size:28px;
+	}
+	
+	.header-wrap ul{
+		top:400px;
+	}
+	
+	.request{
+		width:250px;
+	}
+	
+	input[type="submit"].sendButton{
+		margin:15px 0 0 30px;
 	}
 }

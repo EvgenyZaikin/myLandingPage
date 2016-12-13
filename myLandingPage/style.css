@@ -488,6 +488,133 @@ input[type="submit"].sendButton:active{
 	text-decoration:underline;
 }
 
+/* Третий раздел */
+
+.thirdSection:before{
+	content: '';
+	height:6px;
+	width:100%;
+	margin-top:-76px;
+	position:absolute;
+	background-image: url(img/bah_2.png);
+}
+
+.thirdSection{
+	padding:70px 0 0 0;
+	background:#2D3C4C;
+	height:1200px;
+}
+
+.thirdSection h2{
+	display:inline-block;
+	margin:0 0 0 760px;
+	color:white;
+}
+
+.thirdSection p{
+	text-align:center;
+	margin:34px 0 0 0;
+	line-height:18px;
+	color:lightgrey;
+}
+
+.thirdSection p strong{
+	color:white;
+}
+
+.thirdContent{
+	height:1000px;
+	background-image: url(img/s3_sun_bg.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.thirdContent div:nth-of-type(1){
+	width:300px;
+	height:auto;
+	margin:0 0 0 850px;
+	padding:100px 0 0 0;
+}
+
+.thirdContent div:nth-of-type(2){
+	width:300px;
+	height:auto;
+	margin:-40px 0 0 1170px;
+}
+
+.thirdContent div:nth-of-type(3){
+	width:300px;
+	height:auto;
+	margin:100px 0 0 1250px;
+}
+
+.thirdContent div:nth-of-type(4){
+	width:300px;
+	height:auto;
+	margin:-400px 0 0 500px;
+}
+
+.thirdContent div:nth-of-type(5){
+	width:300px;
+	height:auto;
+	margin:100px 0 0 430px;
+}
+
+.thirdContent div:nth-of-type(6){
+	width:300px;
+	height:auto;
+	margin:100px 0 0 500px;
+}
+
+.thirdContent div:nth-of-type(7){
+	width:300px;
+	height:auto;
+	margin:-35px 0 0 850px;
+}
+
+.thirdContent div:nth-of-type(8){
+	width:300px;
+	height:auto;
+	margin:-260px 0 0 1200px;
+}
+
+.thirdContent div:nth-of-type(9){
+	background-color:orange;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	text-align:center;
+	margin:-385px 0 0 850px;
+}
+
+.thirdContent div img{
+	width:100px;
+	margin:50px 0 0 0;
+}
+
+.thirdContent div a{
+	font-size:22px;
+	font-weight:bold;
+	text-transform:none;
+}
+
+.thirdContent div a:hover{
+	text-decoration:none;
+}
+
+.thirdContent div span{
+	display:inline-block;
+	margin:25px 0 0 0;
+	font:15px sans-serif;
+	line-height:18px;
+	color:white;
+}
+
+.thirdContent div hr{
+	width:200px;
+	margin:20px 0 0 0;
+	border:1px solid grey;
+}
 /*Адаптивный стиль под планшеты*/
 
 @media all and (max-width:1024px){

@@ -295,6 +295,7 @@ input[type="submit"].sendButton:active{
 .homesect p{
 	text-align:center;
 	margin:34px 0 0 0;
+	line-height:18px;
 }
 
 .homesect:before{
@@ -419,6 +420,72 @@ input[type="submit"].sendButton:active{
 
 #tableMenu2 span{
 	color:white;
+}
+
+/* Вторая секция */
+
+.secondSection:before{
+	content: '';
+	height:6px;
+	width:100%;
+	margin-top:-76px;
+	position:absolute;
+	background-image: url(img/bah_1.png);
+}
+
+.secondSection{
+	padding:70px 0 0 0;
+}
+
+.secondSection h2{
+	display:inline-block;
+	margin:0 0 0 650px;
+}
+
+.secondSection p{
+	text-align:center;
+	margin:34px 0 0 0;
+	line-height:18px;
+}
+
+.secondSection h3{
+	font:25px sans-serif;
+	display:block;
+	margin:50px 0 50px 650px;
+}
+
+.secondSection h3 a{
+	font:25px sans-serif;
+}
+
+.secondSection h3 a:hover{
+	text-decoration:none;
+}
+
+.secondTable{
+	text-align:center;
+	margin:0 0 70px 0;
+}
+
+.secondTable td{
+	width:350px;
+	padding:35px 0 40px 0;
+}
+
+.secondTable td img{
+	height:80px;
+}
+
+.smallHR{
+	width:70px;
+	margin:30px 0 30px 38%;
+	border:2px solid orange;
+}
+
+.secondTable td p{
+	font:14px sans-serif;
+	font-weight:bold;
+	text-decoration:underline;
 }
 
 /*Адаптивный стиль под планшеты*/

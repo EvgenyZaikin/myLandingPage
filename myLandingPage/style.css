@@ -435,6 +435,7 @@ input[type="submit"].sendButton:active{
 
 .secondSection{
 	padding:70px 0 0 0;
+	background-color:#F9F9F9;
 }
 
 .secondSection h2{
@@ -615,6 +616,137 @@ input[type="submit"].sendButton:active{
 	margin:20px 0 0 0;
 	border:1px solid grey;
 }
+
+/* Четвёртый раздел */
+
+.fourthSection{
+	background-color:#E5E5E5;
+	margin:133px 0 0 0;
+	padding:70px 0 0 0;
+}
+
+.fourthSection:before{
+	content: '';
+	height:6px;
+	width:100%;
+	margin-top:-76px;
+	position:absolute;
+	background-image: url(img/bah_3.png);
+}
+
+.fourthSection h2{
+	display:inline-block;
+	margin:0 0 0 625px;
+}
+
+.fourthSection p{
+	text-align:center;
+	margin:34px 0 0 0;
+	line-height:18px;
+}
+
+.fourthSection h3{
+	font:25px sans-serif;
+	display:block;
+	margin:50px 0 50px 650px;
+}
+
+.fourthSection table{
+	margin:40px 0 0 400px;
+	perspective: 600px;
+}
+
+.fourthSection td{
+	width:300px;
+	height:600px;
+	background-color:#2D3C4C;
+	transition:all 1s ease;
+}
+
+.fourthSection td.card-off{
+	transform: rotateY(100deg);
+	opacity: 0;
+}
+
+.fourthSection td.card-on{
+	transform: rotateY(0deg);
+	opacity: 1;
+}
+
+.fourthSection table  tr td:nth-of-type(1) div img{
+	width:100px;
+	margin:80px 0 0 0;
+}
+
+.fourthSection table  tr td:nth-of-type(1) div h4{
+	font:18px sans-serif;
+	font-weight:bold;
+	color:white;
+	display:block;
+	margin:150px 0 0 0;
+}
+
+.fourthSection table  tr td:nth-of-type(1) div{
+	background-color:orange;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	text-align:center;
+	margin:-250px 0 0 50px;
+}
+
+.fourthSection table  tr td:nth-of-type(2) div img{
+	width:100px;
+	margin:70px 0 0 0;
+}
+
+.fourthSection table  tr td:nth-of-type(2) div h4{
+	font:18px sans-serif;
+	font-weight:bold;
+	color:white;
+	display:block;
+	margin:135px 0 0 0;
+}
+
+.fourthSection table tr td:nth-of-type(2) div{
+	background-color:orange;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	text-align:center;
+	margin:-250px 0 0 50px;
+}
+
+.fourthSection table  tr td:nth-of-type(3) div img{
+	width:100px;
+	margin:53px 0 0 0;
+}
+
+.fourthSection table  tr td:nth-of-type(3) div h4{
+	font:18px sans-serif;
+	font-weight:bold;
+	color:white;
+	display:block;
+	margin:115px 0 0 0;
+}
+
+.fourthSection table tr td:nth-of-type(3) div{
+	background-color:orange;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	text-align:center;
+	margin:-250px 0 0 50px;
+}
+
+.fourthSection table p{
+	color:lightgrey;
+}
+
+.fourthSection p span{
+	color:orange;
+}
+
 /*Адаптивный стиль под планшеты*/
 
 @media all and (max-width:1024px){

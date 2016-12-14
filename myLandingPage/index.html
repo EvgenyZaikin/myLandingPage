@@ -326,6 +326,47 @@
 				<a class="buttons">Заказать сопровождение</a>
 			</div>
 		</section>
+		<section class="fourthSection">
+			<h2>Преимущества armata financical group</h2>
+			<hr class="shortLine"/>
+			<p>
+				<strong>Компания AFG</strong> поддерживает российские и иностранные компании, работающие на отечественном рынке в решении задач<br/>
+				экономического роста, защиты своих интересов, управления текущей деятельностью. Помогает создавать системы владения<br/>
+				активами, устанавливает коммуникации с новыми партнёрами и рынками, организует сделки и привлекает капиталы
+			</p>
+			<h3>Привлекательные условия сотрудничества</h3>
+			<table cellspacing="50px">
+				<tr>
+					<td class="card-off">
+						<div>
+							<img alt="sale" src="img/icons/section_4/1.svg"/>
+							<h4>Скидки</h4>
+							<p>
+								Предоставляем всем нашим<br/>клиентам уникальную<br/>возможность получить скидку<br/><span>50%</span> на все услуги
+							</p>
+						</div>
+					</td>
+					<td class="card-off">
+						<div>
+							<img alt="sale" src="img/icons/section_4/2.svg"/>
+							<h4>Команда</h4>
+							<p>
+								У нас большой опыт работы<br/>в крупнейших консалтинговых<br/>компаниях
+							</p>
+						</div>
+					</td>
+					<td class="card-off">
+						<div>
+							<img alt="sale" src="img/icons/section_4/3.svg"/>
+							<h4>Скорость</h4>
+							<p>
+								Приступаем к выполнению<br/>обязательств в день обращения<br/>в нашу компанию
+							</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</section>
 	</body>
 	
 	<script>
@@ -343,5 +384,23 @@
 					alert("Какая-то ошибка с выпадающим меню!");
 				}
 			});
+			
+			/* Делаем поворот блоков */
+			var section = document.getElementsByClassName('fourthSection');
+			var h2 = section[0].getElementsByTagName('h2');
+			var tds = document.getElementsByClassName('card-off');
+			window.onscroll = function(){
+				var coord = h2[0].getBoundingClientRect();
+				var pointTop = coord.top;
+				if(pointTop < 426){
+					setTimeout(function(){tds[0].classList.add('card-on');}, 10);
+					setTimeout(function(){tds[1].classList.add('card-on');}, 10);
+					setTimeout(function(){tds[2].classList.add('card-on');}, 10);
+				} else if(pointTop > 425){
+					setTimeout(function(){tds[0].classList.remove('card-on');}, 10);
+					setTimeout(function(){tds[1].classList.remove('card-on');}, 10);
+					setTimeout(function(){tds[2].classList.remove('card-on');}, 10);
+				}
+			}
 	</script>
 </html>

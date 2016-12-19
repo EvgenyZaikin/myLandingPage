@@ -367,6 +367,72 @@
 				</tr>
 			</table>
 		</section>
+		<section class="fiveSection">
+			<h2>Как мы работаем</h2>
+			<hr class="shortLine"/>
+			<div class="triangles-container">
+				<div class="first-tc-item close">
+					<div></div>
+					<div></div>
+					<div>
+						<img src="img/icons/section_5/1.svg"/>
+						<div class="inside">
+							<span>1.</span>
+							<p>
+								 Вы оставляете заявку
+							</p>
+						</div>
+					</div>
+					<div></div>
+				</div>
+				<div class="tc-item close">
+					<div></div>
+					<div></div>
+					<div>
+						<img src="img/icons/section_5/2.svg"/>
+						<div class="inside">
+							<span>2.</span>
+							<p>
+								Подписываем договор
+							</p>
+						</div>
+					</div>
+					<div></div>
+				</div>
+				<div class="tc-item close">
+					<div></div>
+					<div></div>
+					<div>
+						<img src="img/icons/section_5/3.svg"/>
+						<div class="inside">
+							<span>3.</span>
+							<p>
+								Мы проводим оценку
+							</p>
+						</div>
+					</div>
+					<div></div>
+				</div>
+				<div class="tc-item close">
+					<div></div>
+					<div></div>
+					<div>
+						<img src="img/icons/section_5/4.svg"/>
+						<div class="inside">
+							<span>4.</span>
+							<p>
+								Вы получаете ответ
+							</p>
+						</div>
+					</div>
+					<div></div>
+				</div>
+			</div>
+			
+			<div class="section-bottom"style="background-color:#303E4E";>
+				<a class="buttons">Оставить заявку</a>
+			</div>
+		</section>
 	</body>
 	
 	<script>
@@ -385,10 +451,18 @@
 				}
 			});
 			
-			/* Делаем поворот блоков */
+			/* Делаем поворот блоков и анимируем элементы в пятой секции*/
 			var section = document.getElementsByClassName('fourthSection');
 			var h2 = section[0].getElementsByTagName('h2');
 			var tds = document.getElementsByClassName('card-off');
+			
+			var fiveSection = document.getElementsByClassName('fiveSection')[0];
+			var hr = fiveSection.getElementsByTagName('hr')[0];
+			var one = fiveSection.getElementsByClassName('first-tc-item')[0];
+			var two = fiveSection.getElementsByClassName('tc-item')[0];
+			var three = fiveSection.getElementsByClassName('tc-item')[1];
+			var four = fiveSection.getElementsByClassName('tc-item')[2];
+			
 			window.onscroll = function(){
 				var coord = h2[0].getBoundingClientRect();
 				var pointTop = coord.top;
@@ -400,6 +474,20 @@
 					setTimeout(function(){tds[0].classList.remove('card-on');}, 10);
 					setTimeout(function(){tds[1].classList.remove('card-on');}, 10);
 					setTimeout(function(){tds[2].classList.remove('card-on');}, 10);
+				}
+				
+				var coord = hr.getBoundingClientRect();
+				var coordTop = coord.top;
+				if(coordTop < 733){
+					setTimeout(function(){one.classList.remove('close');}, 10);
+					setTimeout(function(){two.classList.remove('close');}, 500);
+					setTimeout(function(){three.classList.remove('close');}, 1000);
+					setTimeout(function(){four.classList.remove('close');}, 1500);
+				} else if (coordTop > 733){
+					setTimeout(function(){one.classList.add('close');}, 10);
+					setTimeout(function(){two.classList.add('close');}, 10);
+					setTimeout(function(){three.classList.add('close');}, 10);
+					setTimeout(function(){four.classList.add('close');}, 10);
 				}
 			}
 	</script>

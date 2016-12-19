@@ -747,6 +747,161 @@ input[type="submit"].sendButton:active{
 	color:orange;
 }
 
+/* Пятая секция */
+
+.fiveSection:before{
+	content: '';
+	height:6px;
+	width:100%;
+	margin-top:-76px;
+	position:absolute;
+	background-image: url(img/bah_2.png);
+}
+
+.fiveSection{
+	padding:70px 0 0 0;
+	background:#2D3C4C;
+	height:500px;
+}
+
+.fiveSection h2{
+	display:inline-block;
+	margin:0 0 0 800px;
+	color:white;
+}
+
+.triangles-container{
+	color:white;
+	font-size:20px;
+	margin:60px 0 70px 0;
+	text-align:center;
+}
+
+.tc-item{
+	width:290px;
+	height:128px;
+	display:inline-block;
+	transition:all 1s ease;
+}
+
+.tc-item div:nth-of-type(1){
+	width:0px;
+	height:0px;
+	border-top:32px solid orange;
+	border-right:20px solid orange;
+	border-bottom:32px solid transparent;
+	border-left:20px solid transparent;
+	float:left;
+}
+
+.tc-item div:nth-of-type(2){
+	width:0px;
+	height:0px;
+	border-top:32px solid transparent;
+	border-right:20px solid orange;
+	border-bottom:32px solid orange;
+	border-left:20px solid transparent;
+	float:left;
+	margin:64px 0 0 -40px;
+}
+
+.tc-item div:nth-of-type(3){
+	width:210px;
+	height:128px;
+	background-color:orange;
+	float:left;
+}
+
+.tc-item div:nth-of-type(4){
+	width:0px;
+	height:0px;
+	border-top:64px solid transparent;
+	border-bottom:64px solid transparent;
+	border-left:40px solid orange;
+	margin:0 0 0 250px;
+}
+
+.inside{
+	padding:10px 0 0 0;
+}
+
+.tc-item img{
+	width:40px;
+	margin:40px 0 0 10px;
+	float:left;
+}
+
+.tc-item span{
+	color:white;
+	font:20px sans-serif;
+	display:inline-block;
+	float:left;
+	height:50px;
+}
+
+.tc-item p{
+	color:white;
+	font:18px sans-serif;
+	margin:2px 0 0 20px;
+}
+
+.first-tc-item{
+	width:290px;
+	height:128px;
+	display:inline-block;
+	opacity: 1;
+	transition:all 1s ease;
+}
+
+.first-tc-item div:nth-of-type(1){
+	
+}
+
+.first-tc-item div:nth-of-type(2){
+	
+}
+
+.first-tc-item div:nth-of-type(3){
+	width:250px;
+	height:128px;
+	background-color:orange;
+	float:left;
+}
+
+.first-tc-item div:nth-of-type(4){
+	width:0px;
+	height:0px;
+	border-top:64px solid transparent;
+	border-bottom:64px solid transparent;
+	border-left:40px solid orange;
+	margin:0 0 0 250px;
+}
+
+.first-tc-item img{
+	width:50px;
+	margin:45px 0 0 20px;
+	float:left;
+}
+
+.first-tc-item span{
+	color:white;
+	font:20px sans-serif;
+	display:inline-block;
+	float:left;
+	height:50px;
+	margin:30px 0 0 20px;
+}
+
+.first-tc-item p{
+	color:white;
+	font:18px sans-serif;
+	margin:30px 0 0 0px;
+}	
+
+.close{
+	opacity: 0;
+}
+
 /*Адаптивный стиль под планшеты*/
 
 @media all and (max-width:1024px){

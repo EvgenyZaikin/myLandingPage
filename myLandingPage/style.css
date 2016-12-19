@@ -806,10 +806,11 @@ input[type="submit"].sendButton:active{
 }
 
 .tc-item div:nth-of-type(3){
-	width:210px;
+	width:212px;
 	height:128px;
 	background-color:orange;
 	float:left;
+	margin:0 0 0 -1px;
 }
 
 .tc-item div:nth-of-type(4){
@@ -845,6 +846,10 @@ input[type="submit"].sendButton:active{
 	margin:2px 0 0 20px;
 }
 
+.tc-item:hover{
+	transform:scale(1.3);
+}
+
 .first-tc-item{
 	width:290px;
 	height:128px;
@@ -862,7 +867,7 @@ input[type="submit"].sendButton:active{
 }
 
 .first-tc-item div:nth-of-type(3){
-	width:250px;
+	width:251px;
 	height:128px;
 	background-color:orange;
 	float:left;
@@ -898,8 +903,81 @@ input[type="submit"].sendButton:active{
 	margin:30px 0 0 0px;
 }	
 
+.first-tc-item:hover{
+	transform:scale(1.3);
+}
+
 .close{
 	opacity: 0;
+}
+
+/* Делаем шестую секцию */
+
+.sixSection{
+	background-color: white;
+	margin:0px 0 0 0;
+	padding:70px 0 0 0;
+}
+
+.sixSection:before{
+	content: '';
+	height:6px;
+	width:100%;
+	margin-top:-76px;
+	position:absolute;
+	background-image: url(img/bah_1.png);
+}
+
+.sixSection h2{
+	display:inline-block;
+	margin:0 0 0 625px;
+}
+
+.sixSection p{
+	text-align:center;
+	margin:34px 0 0 0;
+	line-height:18px;
+}
+
+.sixSection table{
+	margin:80px 0 0 400px;
+	border-spacing: 50px 0;
+}
+
+.sixSection td{
+	width:300px;
+	height:450px;
+	background-color:#E4E4E4;
+	text-align:center;
+}
+
+.sixSection img{
+	width:150px;
+	border-radius:50%;
+	border:5px solid lightgrey;
+}
+
+.sixSection span{
+	display:block;
+}
+
+.sixSection td span:nth-of-type(1){
+	color:black;
+	font-weight:bold;
+	font-size:18px;
+	margin:50px 0 0 0;
+}
+
+.sixSection td span:nth-of-type(2){
+	color:grey;
+	font-size:16px;
+	margin:10px 0 50px 0;
+}
+
+.sixSection td span:nth-of-type(3){
+	color:black;
+	font-size:18px;
+	font-weight:bold;
 }
 
 /*Адаптивный стиль под планшеты*/

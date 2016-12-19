@@ -462,6 +462,46 @@
 				</tr>
 			</table>
 		</section>
+		<section class="sevenSection">
+			<h2>Отзывы клиентов</h2>
+			<hr class="shortLine"/>
+			<p>
+				Послушайте, что о нас говорят благодарные клиенты
+			</p>
+			<div class="requestMain">
+				<ul class="wheel">
+					<li>
+						<img src="img/team/1.jpg"/>
+						<span>Евгений Александрович</span>
+						<span>ОАО "Роскомнадзор"</span>
+						<p>
+							Текст, текст, текст, текст, текст...
+						</p>
+					</li>
+					<li>
+						<img src="img/team/2.jpg"/>
+						<span>Виталий Дое</span>
+						<span>Менеджер продаж</span>
+						<p>
+							Текст, текст, текст, текст, текст...
+						</p>
+					</li>
+					<li>
+						<img src="img/team/3.jpg"/>
+						<span>Екатерина</span>
+						<span>Старший менеджер</span>
+						<p>
+							Текст, текст, текст, текст, текст...
+						</p>
+					</li>
+				</ul>
+				<div class="buttonsRequests">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</section>
 	</body>
 	
 	<script>
@@ -519,5 +559,36 @@
 					setTimeout(function(){four.classList.add('close');}, 10);
 				}
 			}
+			
+			/* Делаем прокрутку отзывов */
+			var wheel = document.getElementsByClassName('wheel')[0];
+			var requests = wheel.getElementsByTagName('li');
+			var buttonPanel = document.getElementsByClassName('buttonsRequests')[0];
+			var requestsButton = buttonPanel.getElementsByTagName('div');
+			requestsButton[0].addEventListener("click", function(){
+				requests[0].style.display = 'block'; 
+				requests[1].style.display = 'none'; 
+				requests[2].style.display = 'none'; 
+				requestsButton[0].style.background = 'orange';
+				requestsButton[1].style.background = 'lightgrey';
+				requestsButton[2].style.background = 'lightgrey';
+			});
+			requestsButton[1].addEventListener("click", function(){
+				requests[0].style.display = 'none'; 
+				requests[1].style.display = 'block'; 
+				requests[2].style.display = 'none'; 
+				requestsButton[0].style.background = 'lightgrey';
+				requestsButton[1].style.background = 'orange';
+				requestsButton[2].style.background = 'lightgrey';
+			});
+			requestsButton[2].addEventListener("click", function(){
+				requests[0].style.display = 'none'; 
+				requests[1].style.display = 'none'; 
+				requests[2].style.display = 'block'; 
+				requestsButton[0].style.background = 'lightgrey';
+				requestsButton[1].style.background = 'lightgrey';
+				requestsButton[2].style.background = 'orange';
+			});
+			
 	</script>
 </html>

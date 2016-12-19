@@ -915,7 +915,7 @@ input[type="submit"].sendButton:active{
 
 .sixSection{
 	background-color: white;
-	margin:0px 0 0 0;
+	margin:0 0 100px 0;
 	padding:70px 0 0 0;
 }
 
@@ -978,6 +978,126 @@ input[type="submit"].sendButton:active{
 	color:black;
 	font-size:18px;
 	font-weight:bold;
+}
+
+/* Седьмая секция */
+.sevenSection:before{
+	content: '';
+	height:6px;
+	width:100%;
+	margin-top:-76px;
+	position:absolute;
+	background-image: url(img/bah_3.png);
+}
+
+.sevenSection{
+	padding:70px 0 0 0;
+	background:#E5E5E5;
+	height:800px;
+}
+
+.sevenSection h2{
+	display:inline-block;
+	margin:0 0 0 800px;
+	color:black;
+}
+
+.sevenSection p{
+	text-align:center;
+	margin:34px 0 0 0;
+	line-height:18px;
+}
+
+.requestMain{
+	border:1px solid #E5E5E5;
+	width:1200px;
+	height:600px;
+	margin:0px 0 0 350px;
+	text-align:center;
+}
+
+.requestMain ul{
+	width:9999px;
+}
+
+.requestMain ul li{
+	float:left;
+	margin:30px 0 0 500px;
+}
+
+.requestMain ul li:nth-of-type(1){
+	float:left;
+	display:block;
+}
+
+.requestMain ul li:nth-of-type(2){
+	float:left;
+	display:none;
+}
+
+.requestMain ul li:nth-of-type(3){
+	float:left;
+	display:none;
+}
+
+.requestMain img{
+	width:150px;
+	border-radius:50%;
+	border:5px solid orange;
+	margin:30px 0 0 0;
+}
+
+.requestMain ul li span:nth-of-type(1){
+	display:block;
+	color:black;
+	font-weight:bold;
+	font-size:18px;
+	margin:50px 0 0 0
+}
+
+.requestMain ul li span:nth-of-type(2){
+	display:block;
+	color:grey;
+	font-size:16px;
+	margin:20px 0 0 0
+}
+
+.buttonsRequests{
+	width:200px;
+	height:32px;
+	margin:500px 0 0 510px;
+	padding:8px;
+}
+
+.buttonsRequests div:hover{
+	cursor:pointer;
+	border:1px solid black;
+}
+
+.buttonsRequests div:nth-of-type(1){
+	width:30px;
+	height:30px;
+	background-color:orange;
+	border-radius: 50%;
+	float:left;
+}
+
+.buttonsRequests div:nth-of-type(2){
+	width:30px;
+	height:30px;
+	background-color:lightgrey;
+	border-radius: 50%;
+	float:left;
+	margin:0 0 0 50px;
+}
+
+.buttonsRequests div:nth-of-type(3){
+	width:30px;
+	height:30px;
+	background-color:lightgrey;
+	border-radius: 50%;
+	float:left;
+	margin:0 0 0 50px;
 }
 
 /*Адаптивный стиль под планшеты*/

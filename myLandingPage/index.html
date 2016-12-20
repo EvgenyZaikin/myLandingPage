@@ -589,6 +589,21 @@
 				}
 			});
 			
+			/* Анимируем элементы в tableMenu */
+			var tableMenu = document.getElementsByClassName('tableMenu')[0];
+			var tdsTableMenu = tableMenu.getElementsByTagName('td');
+			var homesect = document.getElementsByClassName('homesect')[0];
+			var h2HomeSect = homesect.getElementsByTagName('h2')[0];
+			tdsTableMenu[4].style.opacity = '1';
+			tdsTableMenu[4].style.transform = 'scale(1)';
+			var tableMenu2 = document.getElementById('tableMenu2');
+			var tdsTableMenu2 = tableMenu2.getElementsByTagName('td');
+			
+			/* Анимируем элементы во второй секции */
+			var secondSection = document.getElementsByClassName('secondSection')[0];
+			var tdsSecondSection = secondSection.getElementsByTagName('td');
+			var h2SecondSection = secondSection.getElementsByTagName('h2')[0];
+		
 			/* Делаем поворот блоков и анимируем элементы в пятой секции*/
 			var section = document.getElementsByClassName('fourthSection');
 			var h2 = section[0].getElementsByTagName('h2');
@@ -626,6 +641,77 @@
 					setTimeout(function(){two.classList.add('close');}, 10);
 					setTimeout(function(){three.classList.add('close');}, 10);
 					setTimeout(function(){four.classList.add('close');}, 10);
+				}
+				
+				var h2HomeSectCoord = h2HomeSect.getBoundingClientRect();
+				var h2HomeSectTop = h2HomeSectCoord.top;
+				if(h2HomeSectTop < 450){
+					setTimeout(function(){
+						tdsTableMenu[0].style.opacity = '1';
+						tdsTableMenu[0].style.transform = 'scale(1)';
+						tdsTableMenu[1].style.opacity = '1';
+						tdsTableMenu[1].style.transform = 'scale(1)';
+						tdsTableMenu[2].style.opacity = '1';
+						tdsTableMenu[2].style.transform = 'scale(1)';
+					}, 200);
+					setTimeout(function(){
+						tdsTableMenu[3].style.opacity = '1';
+						tdsTableMenu[3].style.transform = 'scale(1)';
+						tdsTableMenu[5].style.opacity = '1';
+						tdsTableMenu[5].style.transform = 'scale(1)';
+					}, 1000);
+					setTimeout(function(){
+						tdsTableMenu2[0].style.opacity = '1';
+						tdsTableMenu2[0].style.transform = 'scale(1)';
+						tdsTableMenu2[1].style.opacity = '1';
+						tdsTableMenu2[1].style.transform = 'scale(1)';
+						tdsTableMenu2[2].style.opacity = '1';
+						tdsTableMenu2[2].style.transform = 'scale(1)';
+					}, 1800);
+				} else {
+					tdsTableMenu[0].style.opacity = '0';
+					tdsTableMenu[1].style.opacity = '0';
+					tdsTableMenu[2].style.opacity = '0';
+					tdsTableMenu[3].style.opacity = '0';
+					tdsTableMenu[5].style.opacity = '0';
+					tdsTableMenu2[0].style.opacity = '0';
+					tdsTableMenu2[1].style.opacity = '0';
+					tdsTableMenu2[2].style.opacity = '0';
+				}
+				
+				var h2SecondSectionCoord = h2SecondSection.getBoundingClientRect();
+				var h2SecondSectionTop = h2SecondSectionCoord.top;
+				if(h2SecondSectionTop < 548){
+					setTimeout(function(){
+						tdsSecondSection[0].style.opacity = '1';
+					}, 200);
+					setTimeout(function(){
+						tdsSecondSection[1].style.opacity = '1';
+					}, 400);
+					setTimeout(function(){
+						tdsSecondSection[2].style.opacity = '1';
+					}, 600);
+					setTimeout(function(){
+						tdsSecondSection[3].style.opacity = '1';
+					}, 800);
+					setTimeout(function(){
+						tdsSecondSection[4].style.opacity = '1';
+					}, 1000);
+					setTimeout(function(){
+						tdsSecondSection[5].style.opacity = '1';
+					}, 1200);
+					setTimeout(function(){
+						tdsSecondSection[7].style.opacity = '1';
+					}, 1400);
+					setTimeout(function(){
+						tdsSecondSection[8].style.opacity = '1';
+					}, 1600);
+					setTimeout(function(){
+						tdsSecondSection[9].style.opacity = '1';
+					}, 1800);
+					setTimeout(function(){
+						tdsSecondSection[10].style.opacity = '1';
+					}, 2000);
 				}
 			}
 			

@@ -384,6 +384,9 @@ input[type="submit"].sendButton:active{
 	width:700px;
 	height:230px;
 	text-align:center;
+	opacity: 0;
+	transform: scale(0);
+	transition:all 2s ease;
 }
 
 #law{
@@ -471,6 +474,7 @@ input[type="submit"].sendButton:active{
 .secondTable td{
 	width:350px;
 	padding:35px 0 40px 0;
+	opacity:0;
 }
 
 .secondTable td img{

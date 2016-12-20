@@ -1100,6 +1100,127 @@ input[type="submit"].sendButton:active{
 	margin:0 0 0 50px;
 }
 
+/* Восьмая секция */
+
+.eightSection{
+	background-color: white;
+	margin:0 0 100px 0;
+	padding:70px 0 0 0;
+}
+
+.eightSection:before{
+	content: '';
+	height:6px;
+	width:100%;
+	margin-top:-76px;
+	position:absolute;
+	background-image: url(img/bah_1.png);
+}
+
+.eightSection h2{
+	display:inline-block;
+	margin:0 0 0 50px;
+}
+
+.eightSection .shortLine{
+	margin:34px 0 0 50px;
+}
+
+.eightSection p{
+	margin:34px 0 0 50px;
+	line-height:18px;
+}
+
+.eightSection table{
+	margin:0px 0 0 -100px;
+	border-spacing:150px 0;
+}
+
+.eightSection table td{
+	width:150px;
+	height:500px;
+	text-align:center;
+}
+
+.eightSection table span{
+	font:bold 16px black;
+	display:block;
+	margin:30px 0 0 0;
+}
+
+.eightSection form{
+	margin:-500px 50px 0px 0;
+	background-color:#DCDCDC;
+}
+
+.eightSection form h4{
+	color:#3E424A;
+}
+
+.eightSection form p{
+	color:grey;
+	margin:20px 0px 0 0;
+}
+
+.eightSection form input{
+	background-color:#BFBFBF;
+}
+
+.eightSection form input:focus{
+	background-color:white;
+}
+
+/* Подвал */
+
+footer:before{
+	content: '';
+	height:6px;
+	width:100%;
+	margin-top:-76px;
+	position:absolute;
+	background-image: url(img/bah_2.png);
+}
+
+footer{
+	padding:70px 0 0 0;
+	background:#2D3C4C;
+	height:200px;
+}
+
+footer img{
+	margin:50px 0 0 50px;
+}
+
+footer nav ul{
+	margin:-30px 0 0 600px;
+}
+
+footer nav ul li a{
+	display:block;
+	color:white;
+	text-decoration:none;
+	margin:0px 20px 0 0px;
+}
+
+footer nav ul li a:hover{
+	text-decoration:underline;
+}
+
+footer nav ul li a.active{
+	color:orange;
+	text-decoration:underline;
+}
+
+footer span{
+	color:white;
+	opacity: .9;
+	font-size:20px;
+	font-weight:bold;
+	line-height:48px;
+	float:right;
+	margin:-30px 250px 0 0;
+}
+
 /*Адаптивный стиль под планшеты*/
 
 @media all and (max-width:1024px){

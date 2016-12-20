@@ -91,9 +91,9 @@
 		<section class="homesect">
 			<div class="container">
 				<div class="row">
-					<h2>Независимая оценка имущества</h2>
-					<hr class="shortLine"/>
-					<p>
+					<h2 class="appearance">Независимая оценка имущества</h2>
+					<hr class="shortLine appearance2"/>
+					<p class="appearance">
 						<strong>Определение рыночной стоимости</strong> актива или <a href="" id="rating">оценка</a> - это первый этап рыночных отношений. Оценка заключается <br/>
 						в объективном анализе объекта с целью приданимя ему стоимостных характеристик, выраженных в денежном эквиваленте. 
 					</p>
@@ -180,9 +180,9 @@
 			</div>
 		</section>
 		<section class="secondSection">
-				<h2>Организация сделок</h2>
+				<h2 class="appearance">Организация сделок</h2>
 				<hr class="shortLine"/>
-				<p>
+				<p class="appearance">
 					<strong>Сделки слияния и поглощения</strong> - это процессы укрупнения бизнеса и капитала. Популярность сделки слияния и поглощения<br/>
 					приобрели в конце 80-х годов и сейчас они являются одним из основных движущих факторов развития бизнеса на макро и<br/>
 					микроуровне. Эффективность сделок слияния и поглощения огромна и не вызывает сомнений.
@@ -594,6 +594,8 @@
 			var tdsTableMenu = tableMenu.getElementsByTagName('td');
 			var homesect = document.getElementsByClassName('homesect')[0];
 			var h2HomeSect = homesect.getElementsByTagName('h2')[0];
+			var pHomeSect = homesect.getElementsByTagName('p')[0];
+			var hrHomeSect = homesect.getElementsByTagName('hr')[0];
 			tdsTableMenu[4].style.opacity = '1';
 			tdsTableMenu[4].style.transform = 'scale(1)';
 			var tableMenu2 = document.getElementById('tableMenu2');
@@ -603,6 +605,8 @@
 			var secondSection = document.getElementsByClassName('secondSection')[0];
 			var tdsSecondSection = secondSection.getElementsByTagName('td');
 			var h2SecondSection = secondSection.getElementsByTagName('h2')[0];
+			var pSecondSection = secondSection.getElementsByTagName('p')[0];
+			var hrSecondSection = secondSection.getElementsByTagName('hr')[0];
 		
 			/* Делаем поворот блоков и анимируем элементы в пятой секции*/
 			var section = document.getElementsByClassName('fourthSection');
@@ -650,6 +654,11 @@
 				
 				var h2HomeSectCoord = h2HomeSect.getBoundingClientRect();
 				var h2HomeSectTop = h2HomeSectCoord.top;
+				if(h2HomeSectTop < 700){
+					h2HomeSect.classList.remove('appearance');
+					pHomeSect.classList.remove('appearance');
+					hrHomeSect.classList.remove('appearance2');
+				}
 				if(h2HomeSectTop < 450){
 					setTimeout(function(){
 						tdsTableMenu[0].style.opacity = '1';
@@ -686,6 +695,10 @@
 				
 				var h2SecondSectionCoord = h2SecondSection.getBoundingClientRect();
 				var h2SecondSectionTop = h2SecondSectionCoord.top;
+				if(h2SecondSectionTop < 700){
+					h2SecondSection.classList.remove('appearance');
+					pSecondSection.classList.remove('appearance');
+				}
 				if(h2SecondSectionTop < 548){
 					setTimeout(function(){
 						tdsSecondSection[0].style.opacity = '1';

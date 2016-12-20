@@ -1249,6 +1249,67 @@ footer span{
 	margin:-30px 250px 0 0;
 }
 
+footer button{
+	margin:80px 0 0 850px;
+	padding:5px;
+	background-color:lightgrey;
+	border:1px solid grey;
+}
+
+footer button:hover{
+	cursor:pointer;
+	background-color:white;
+}
+
+/* popup */
+.popup1{
+	position:absolute;
+	top:694px;
+	left:775px;
+	z-index:5;
+	opacity:1;
+	display:none;
+}
+
+.popup2{
+	position:absolute;
+	top:2637px;
+	left:775px;
+	z-index:5;
+	opacity:1;
+	display:none;
+}
+
+.popup3{
+	position:absolute;
+	top:4040px;
+	left:775px;
+	z-index:5;
+	opacity:1;
+	display:none;
+}
+
+.popup5{
+	position:absolute;
+	top:5700px;
+	left:775px;
+	z-index:5;
+	opacity:1;
+	display:none;
+}
+
+.exit{
+	position:relative;
+	top:-363px;
+	left:69px;
+	background-color:lightgrey;
+}
+
+.exit:hover{
+	cursor:pointer;
+	background-color:white;
+}
+
 /*Адаптивный стиль под планшеты*/
 
 @media all and (max-width:1024px){

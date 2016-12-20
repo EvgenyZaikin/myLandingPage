@@ -173,6 +173,24 @@
 							</tr>
 						</table>
 					</div>
+					<form class="request popup1" method="POST" action="">
+						<h4>Заявка:</h4>
+						<p>
+							Оставьте заявку и мы свяжемся с Вами </br> 
+							в течение 15 минут в рабочее время </br> 
+							с 10:00 до 18:00 с понедельника по пятницу
+						</p>
+						<label>
+							<span>Ваше имя:</span>
+							<input type="text" name="name" required/>
+						</label>
+						<label>
+							<span>Ваше телефон:</span>
+							<input type="text" name="phone" required/>
+						</label>
+						<input type="submit" name="send" value="Отправить" class="sendButton"/>
+						<button class="exit">X</button>
+					</form>
 					<div class="section-bottom">
 						<a class="buttons">Заказать оценку</a>
 					</div>
@@ -267,6 +285,24 @@
 						</td>
 					</tr>
 				</table>
+				<form class="request popup2" method="POST" action="">
+					<h4>Заявка:</h4>
+					<p>
+						Оставьте заявку и мы свяжемся с Вами </br> 
+						в течение 15 минут в рабочее время </br> 
+						с 10:00 до 18:00 с понедельника по пятницу
+					</p>
+					<label>
+						<span>Ваше имя:</span>
+						<input type="text" name="name" required/>
+					</label>
+					<label>
+						<span>Ваше телефон:</span>
+						<input type="text" name="phone" required/>
+					</label>
+					<input type="submit" name="send" value="Отправить" class="sendButton"/>
+					<button class="exit">X</button>
+				</form>
 				<div class="section-bottom">
 						<a class="buttons">Заказать сопровождение</a>
 				</div>
@@ -324,6 +360,24 @@
 					<img src="img/icons/section_3/folder.png" alt="books"/>
 				</div>	
 			</div>
+			<form class="request popup3" method="POST" action="">
+				<h4>Заявка:</h4>
+				<p>
+					Оставьте заявку и мы свяжемся с Вами </br> 
+					в течение 15 минут в рабочее время </br> 
+					с 10:00 до 18:00 с понедельника по пятницу
+				</p>
+				<label>
+					<span>Ваше имя:</span>
+					<input type="text" name="name" required/>
+				</label>
+				<label>
+					<span>Ваше телефон:</span>
+					<input type="text" name="phone" required/>
+				</label>
+				<input type="submit" name="send" value="Отправить" class="sendButton"/>
+				<button class="exit">X</button>
+			</form>
 			<div class="section-bottom"style="background-color:#303E4E";>
 				<a class="buttons">Заказать сопровождение</a>
 			</div>
@@ -430,7 +484,24 @@
 					<div></div>
 				</div>
 			</div>
-			
+			<form class="request popup5" method="POST" action="">
+				<h4>Заявка:</h4>
+				<p>
+					Оставьте заявку и мы свяжемся с Вами </br> 
+					в течение 15 минут в рабочее время </br> 
+					с 10:00 до 18:00 с понедельника по пятницу
+				</p>
+				<label>
+					<span>Ваше имя:</span>
+					<input type="text" name="name" required/>
+				</label>
+				<label>
+					<span>Ваше телефон:</span>
+					<input type="text" name="phone" required/>
+				</label>
+				<input type="submit" name="send" value="Отправить" class="sendButton"/>
+				<button class="exit">X</button>
+			</form>
 			<div class="section-bottom"style="background-color:#303E4E";>
 				<a class="buttons">Оставить заявку</a>
 			</div>
@@ -570,6 +641,7 @@
 				</ul>
 			</nav>
 			<span>+7 (495) 00-99-56</span>
+			<button id="buttonUp">наверх</button>
 		</footer>
 	</body>
 	
@@ -600,6 +672,9 @@
 			tdsTableMenu[4].style.transform = 'scale(1)';
 			var tableMenu2 = document.getElementById('tableMenu2');
 			var tdsTableMenu2 = tableMenu2.getElementsByTagName('td');
+			var button = homesect.getElementsByClassName('buttons')[0];
+			var popup1 = homesect.getElementsByClassName('popup1')[0];
+			var exit = homesect.getElementsByClassName('exit')[0];
 			
 			/* Анимируем элементы во второй секции */
 			var secondSection = document.getElementsByClassName('secondSection')[0];
@@ -607,11 +682,22 @@
 			var h2SecondSection = secondSection.getElementsByTagName('h2')[0];
 			var pSecondSection = secondSection.getElementsByTagName('p')[0];
 			var hrSecondSection = secondSection.getElementsByTagName('hr')[0];
-		
-			/* Делаем поворот блоков и анимируем элементы в пятой секции*/
+			var button2 = secondSection.getElementsByClassName('buttons')[0];
+			var popup2 = secondSection.getElementsByClassName('popup2')[0];
+			var exit2 = secondSection.getElementsByClassName('exit')[0];
+
+			/* popup третья секция */
+			var thirdSection = document.getElementsByClassName('thirdSection')[0];
+			var button3 = thirdSection.getElementsByClassName('buttons')[0];
+			var popup3 = thirdSection.getElementsByClassName('popup3')[0];
+			var exit3 = thirdSection.getElementsByClassName('exit')[0];
+			
+			/* Делаем поворот блоков и анимируем элементы в четвёртой секции*/
 			var section = document.getElementsByClassName('fourthSection');
 			var h2 = section[0].getElementsByTagName('h2');
 			var tds = document.getElementsByClassName('card-off');
+			
+			/* пятая секция*/
 			
 			var fiveSection = document.getElementsByClassName('fiveSection')[0];
 			var hr = fiveSection.getElementsByTagName('hr')[0];
@@ -619,6 +705,9 @@
 			var two = fiveSection.getElementsByClassName('tc-item')[0];
 			var three = fiveSection.getElementsByClassName('tc-item')[1];
 			var four = fiveSection.getElementsByClassName('tc-item')[2];
+			var button5 = fiveSection.getElementsByClassName('buttons')[0];
+			var popup5 = fiveSection.getElementsByClassName('popup5')[0];
+			var exit5 = fiveSection.getElementsByClassName('exit')[0];
 			
 			/* Анимация элементов в восьмой секции */
 			var eightSection = document.getElementsByClassName('eightSection')[0];
@@ -777,5 +866,39 @@
 				requestsButton[2].style.background = 'orange';
 			});
 			
+			/* Делаем возвращение вверх */
+			var buttonUp = document.getElementById('buttonUp');
+			buttonUp.addEventListener("click", function(){
+				window.scrollTo(0, 0);
+			});
+			
+			/* Добавление всплывающих окон */
+			button.addEventListener("click", function(){
+				popup1.style.display = 'block';
+			});
+			exit.addEventListener("click", function(){
+				popup1.style.display = 'none';
+			});
+			
+			button2.addEventListener("click", function(){
+				popup2.style.display = 'block';
+			});
+			exit2.addEventListener("click", function(){
+				popup2.style.display = 'none';
+			});
+			
+			button3.addEventListener("click", function(){
+				popup3.style.display = 'block';
+			});
+			exit3.addEventListener("click", function(){
+				popup3.style.display = 'none';
+			});
+			
+			button5.addEventListener("click", function(){
+				popup5.style.display = 'block';
+			});
+			exit5.addEventListener("click", function(){
+				popup5.style.display = 'none';
+			});
 	</script>
 </html>

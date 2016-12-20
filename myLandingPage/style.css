@@ -443,7 +443,7 @@ input[type="submit"].sendButton:active{
 
 .secondSection h2{
 	display:inline-block;
-	margin:0 0 0 650px;
+	margin:0 0 0 775px;
 }
 
 .secondSection p{
@@ -1144,6 +1144,12 @@ input[type="submit"].sendButton:active{
 	width:150px;
 	height:500px;
 	text-align:center;
+	transition:all 1s ease;
+}
+
+.hide{
+	transform: translateY(-100px);
+	opacity:0;
 }
 
 .eightSection table span{

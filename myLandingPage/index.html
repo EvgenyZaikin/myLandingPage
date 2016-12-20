@@ -180,7 +180,7 @@
 			</div>
 		</section>
 		<section class="secondSection">
-				<h2>Независимая оценка имущества</h2>
+				<h2>Организация сделок</h2>
 				<hr class="shortLine"/>
 				<p>
 					<strong>Сделки слияния и поглощения</strong> - это процессы укрупнения бизнеса и капитала. Популярность сделки слияния и поглощения<br/>
@@ -513,25 +513,25 @@
 			</p>
 			<table>
 				<tr>
-					<td>
+					<td class="hide">
 						<img src="img/icons/section_8/1.svg" width="100px"/>
 						<span>
 							Диплом по<br/>налогооблажению РФ<br/>(ДипНРФ), квалификация<br/>АССА
 						</span>
 					</td>
-					<td>
+					<td class="hide">
 						<img src="img/icons/section_8/2.svg" width="100px"/>
 						<span>
 							Аттестат<br/>профессионального<br/>бухгалтера Института<br/>профессиональных<br/>бухгалтеров России
 						</span>
 					</td>
-					<td>
+					<td class="hide">
 						<img src="img/icons/section_8/3.svg" width="100px"/>
 						<span>
 							Аттестат налогового<br/>консультанта 2-й<br/>категории Палаты<br/>налоговых консультантов<br/>России
 						</span>
 					</td>
-					<td>
+					<td class="hide">
 						<img src="img/icons/section_8/4.svg" width="100px"/>
 						<span>
 							Призёр Первой<br/>всероссийской премии<br/>бухгалтеров<br/>строительной отрасли<br/>"Профессиональные<br/>грани 2011"
@@ -615,6 +615,11 @@
 			var two = fiveSection.getElementsByClassName('tc-item')[0];
 			var three = fiveSection.getElementsByClassName('tc-item')[1];
 			var four = fiveSection.getElementsByClassName('tc-item')[2];
+			
+			/* Анимация элементов в восьмой секции */
+			var eightSection = document.getElementsByClassName('eightSection')[0];
+			var tdsEightSection = eightSection.getElementsByTagName('td');
+			var hrEightSection = eightSection.getElementsByTagName('hr')[0];
 			
 			window.onscroll = function(){
 				var coord = h2[0].getBoundingClientRect();
@@ -712,6 +717,20 @@
 					setTimeout(function(){
 						tdsSecondSection[10].style.opacity = '1';
 					}, 2000);
+				}
+				
+				var hrEightSectionCoord = hrEightSection.getBoundingClientRect();
+				var hrEightSectionTop = hrEightSectionCoord.top;
+				if(hrEightSectionTop < 710){
+					tdsEightSection[0].classList.remove("hide");
+					tdsEightSection[1].classList.remove("hide");
+					tdsEightSection[2].classList.remove("hide");
+					tdsEightSection[3].classList.remove("hide");
+				} else {
+					tdsEightSection[0].classList.add("hide");
+					tdsEightSection[1].classList.add("hide");
+					tdsEightSection[2].classList.add("hide");
+					tdsEightSection[3].classList.add("hide");
 				}
 			}
 			
